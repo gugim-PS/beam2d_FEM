@@ -18,7 +18,8 @@ This repository demonstrates the analysis of beam bending using Finite Element M
 ### 1. Element Stiffness Matrix
 
 Each beam element stiffness matrix is calculated using the following formula:
-\[
+
+$$
 k_e = \frac{E I}{h_{\text{elem}}^3} 
 \begin{bmatrix}
 12 & 6h_{\text{elem}} & -12 & 6h_{\text{elem}} \\
@@ -26,7 +27,7 @@ k_e = \frac{E I}{h_{\text{elem}}^3}
 -12 & -6h_{\text{elem}} & 12 & -6h_{\text{elem}} \\
 6h_{\text{elem}} & 2h_{\text{elem}}^2 & -6h_{\text{elem}} & 4h_{\text{elem}}^2
 \end{bmatrix}
-\]
+$$
 
 ### 2. Global Stiffness Matrix
 
@@ -50,9 +51,10 @@ The displacement at each point is calculated using the stiffness matrix and the 
 ### 2. Theoretical Maximum Displacement
 
 The theoretical displacement at the free end of the beam, based on classical beam theory, is given by the formula:
-\[
+
+$$
 \delta_{\text{max}} = \frac{q L^3}{3 E I}
-\]
+$$
 
 ### 3. Comparison
 
